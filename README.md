@@ -7,11 +7,14 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
     - DBMS 엔진 - 개발자 버전
         - iso 다운로드 후 설치 추천
         - SQL Server에 대한 Azure 확장 비활성화 후 진행
+
+        ![기능선택]https://github.com/inje98/basic-database-2024/blob/main/images/db001.png?raw=true
+
         - 데이터베이스 엔진 구성부터 중요
             - Windows 인증모드로 하면 외부에서 접근불가
             - 혼합모드(sa)에한 암호를 지정 / mssql_p@ss(8자 이상/ 대소문자구분/ 특수문자 1자 이상 포함)
             - 데이터루트 디렉토리는 변경
-    - 개발툴 설치
+    - ![개발툴 설치]https://learn.microsoft.com/ko-kr/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
         - SSMS(SQL Server Management Studio) DB에 접근, 여러 개발 작업할 툴
 
 - 데이터베이스 개념
@@ -24,9 +27,11 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
         - DDL(Data Definition Lang) - 데이터베이스, 테이블, 인덱스 생성
         - DML(Data Manipulation Lang) - 검색(SELECT), 삽입(INSERT), 수정(UPDATE), 삭제(DELETE) 등 기능(중요!)
         - DCL(Data Control Lang) - 권한, 트랜스액션 부여/제거 
-        
+        - TCL(Transaction)
 - SQL 기본 학습
     - SSMS 학습
+
+    ![SSMS]https://github.com/inje98/basic-database-2024/blob/main/images/db002.png?raw=true
 
 - DML 학습
     - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
