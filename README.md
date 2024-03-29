@@ -24,10 +24,11 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
 
 - DB언어
     - SQL(Structured Query Language) : 구조화된 질의 언어
-        - DDL(Data Definition Lang) - 데이터베이스, 테이블, 인덱스 생성
+        - DDL(Data Definition Lang) - 데이터베이스, 테이블, 인덱스 생성, CREATE, ALTER, DROP
         - DML(Data Manipulation Lang) - 검색(SELECT), 삽입(INSERT), 수정(UPDATE), 삭제(DELETE) 등 기능(중요!)
-        - DCL(Data Control Lang) - 권한, 트랜스액션 부여/제거 
-        - TCL(Transaction)
+        - DCL(Data Control Lang) - 권한, 트랜스액션 부여/제거 기능. GRANT, REVOKE
+        - TCL(Transaction) - 트랜스액션(트랜잭션) 제어하는 기능 COMMIT, ROLLBACK. 원래는 DCL의 일부, 기능이 특이해서 TCL로 분리
+
 - SQL 기본 학습
     - SSMS 학습
 
@@ -48,3 +49,14 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
 
     - SELECT문 학습
         - 기본, 조건검색 학습 중
+
+## 2일차
+
+- Database 학습
+    - DB 개발시 사용할 수 있는 툴
+        - SSMS(기본)
+        - Visual Studio - 아무런 설치 없이 개발 가능
+        - Visual Studio Code - SQL Server(mssql) 플러그인 설치하고 개발
+    - ServerName(HostName) - 내 컴퓨터 이름(DESKTOP-QO2E9L6) | 내 네트워크 주소 | 127.0.0.1(LoopBack IP) | localhost(LoopBack URL)
+    - 관계 데이터 모델
+- DML 학습
