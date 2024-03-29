@@ -8,7 +8,7 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
         - iso 다운로드 후 설치 추천
         - SQL Server에 대한 Azure 확장 비활성화 후 진행
 
-        ![기능선택]https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db001.png?raw=true
+        ![기능선택](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db001.png?raw=true)
 
         - 데이터베이스 엔진 구성부터 중요
             - Windows 인증모드로 하면 외부에서 접근불가
@@ -32,7 +32,7 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
 - SQL 기본 학습
     - SSMS 학습
 
-    ![SSMS]https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db002.png?raw=true
+    ![SSMS](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db002.png?raw=true)
 
 - DML 학습
     - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
