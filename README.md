@@ -57,6 +57,25 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
         - SSMS(기본)
         - Visual Studio - 아무런 설치 없이 개발 가능
         - Visual Studio Code - SQL Server(mssql) 플러그인 설치하고 개발
-    - ServerName(HostName) - 내 컴퓨터 이름(DESKTOP-QO2E9L6) | 내 네트워크 주소 | 127.0.0.1(LoopBack IP) | localhost(LoopBack URL)
+    - ServerName(HostName) - [내 컴퓨터 이름(DESKTOP-QO2E9L6) | 내 네트워크 주소 | 127.0.0.1(LoopBack IP) | localhost(LoopBack URL)] 중에서 선호하는거 아무거나
     - 관계 데이터 모델
+        - 릴레이션 - 행과 열로 구성된 테이블(관계 데이터모델에서만)
+            - 행(튜플),열(속성), 스키마, 인스턴스 용어
+        - 매핑되는 이름 테이블(실제 DB)
+            - 행, 레코드, 열, 컬럼이름, 데이터
+        - 차수(degree) - 속성의 개수
+        - 카디나리티(cardinality) - 튜플의 수
+
+        - 릴레이션 특징
+            1. 속성은 단일값을 가짐(책이름이 여러개 들어가면 안됨)
+            2. 속성은 다른 이름으로 구성(책이름이라는 속성이 두번 있으면 안됨)
+            3. 속성의 값은 정의된 도메인값만 가짐(대학교 학년에 5학년이 있으면 안됨)
+            4. 속성의 순서는 상관없음
+            5. 릴레이션 내 중복된 튜플 허용안함(같은 책 정보를 두번 넣을 수 없음)
+            6. 튜플 순서는 상관없음(1, 3, 5, 2, 6, 7, 8...)
+
+            - 관계 데이터 모델은 아래의 요소로 구성됨
+                - 릴레이션(Relation)
+                - 제약조건(Contraints)
+                - 관계대수(Relational algebra)
 - DML 학습
