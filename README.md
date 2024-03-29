@@ -36,7 +36,7 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
 
 - DML 학습
     - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
-    - IT개발 표현언어 : Request, Create, Update, Delete(CRUD로 부름. CRU개발 뜻은 INSERT, UPDATE, SELECT를 )
+    - IT개발 표현언어 : Request, Create, Update, Delete(CRUD로 부름. CRU개발 뜻은 INSERT, UPDATE, SELECT를 할 수 있는 기능을 개발하라)
     - SELECT
         ```sql
         SELECT[ALL|DISTINCT] 속성이름(들)
