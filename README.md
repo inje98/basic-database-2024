@@ -258,6 +258,6 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
             6. 127.0.0.1로 된 주소 > **사용 > 예**로 변경
             7. 적용 후 SQL Server 서비스 > SQL Server (MSSQLSERVER) 더블클릭 후, **다시 시작** 버튼 클릭, 재시작 필요
 
-        ![구성관리자](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db005.png?raw=true)
+        ![구성관리자](https://github.com/inje98/basic-database-2024/blob/main/images/db005.png?raw=true)
 
 - 데이터베이스 모델링
