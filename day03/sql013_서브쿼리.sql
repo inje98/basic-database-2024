@@ -73,8 +73,7 @@ SELECT b1.*
   FROM Book b1
  WHERE b1.price > ( SELECT AVG(b2.price)
                     FROM Book b2
-                    WHERE b2.publisher = b1.publisher
-                  )
+                    WHERE b2.publisher = b1.publisher);
 
 -- 각 출판사별 평균가격
 SELECT AVG(b2.price), b2.publisher
