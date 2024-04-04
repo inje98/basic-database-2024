@@ -260,7 +260,7 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
 
         ![구성관리자](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db005.png?raw=true)
 
-## 6일차
+## 6일차(24.04.04)
 - 파이썬 SQL Server 연동 프로그래밍'
     - Madang DB 관리 프로그램
     -  PyQt5 + pymssql
@@ -270,10 +270,10 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
         2. python에서 pymssql로 접속할 때, Charset을 'UTF8'로 설정
         3. INSERT 쿼리에 한글 입력되는 컬럼은 N''을 붙여줌(유니코드로 입력하라는 뜻)
 
-- 데이터베이스 모델링
+- 실행화면
 
 ## 7일차
 - SQL 고급
     - 트랜잭션
-    
+
 - 데이터베이스 모델링
