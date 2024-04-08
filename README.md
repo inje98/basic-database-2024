@@ -259,6 +259,7 @@ IoT 개발자 과정 SQLServer 학습 리포지토리
             7. 적용 후 SQL Server 서비스 > SQL Server (MSSQLSERVER) 더블클릭 후, **다시 시작** 버튼 클릭, 재시작 필요
 
         ![구성관리자](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db005.png?raw=true)
+        <img src="">
 
 ## 6일차(24.04.04)
 - 파이썬 SQL Server 연동 프로그래밍'
@@ -298,8 +299,34 @@ https://github.com/inje98/basic-database-2024/assets/158007381/4fb83e03-a2fb-416
 - 인덱스 예제
     - PK나 인덱스가 없는 상태에서 성능문제 체크
     - 인덱스가 설정되면 성능이 어떤지 비교
+    
+    <!-- md 주석. ![인덱스](https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db006.png?raw=true) -->
+    <!-- html img태그가 이미지 사이즈 조정 가능 -->
+    <img src="https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db006.png?raw=true" width = "870">
 
 ## 8일차
 - 인덱스 예제
 - 정규화
+    - DB 상에서 생기는 이상현상(삽입, 삭제, 수정)이 생기지 않는 릴레이션(테이블) 분리해서 데이터베이스 설계
+    - 이상현상이 생기는 테이블을 분리해서 해결
+    - 기본키와 함수종속성을 파악
+    - 1정규형 - 도메인이 원자값을 가짐
+    - 2정규형 - 기본키가 아닌 속성에 기본키에 완전 종곳일때(헉생번호[PK], 강좌이름 --> 성적을 결정)
+    - 3정규형 - 기본키가 아닌 속성이 기본키에 비이행적으로 종속할때(학생번호--> 강좌이름 --> 수강료 [이행종속성])
+    - BCNF 정규형 - 함수 종속성 X -> Y가 성립할때 모든 결정자X가 후보키(기본키가 될 수 있는 속성)이면
+    - 보통 BCNF까지 정규화를 함
+    - 4정규형(다치 종속성), 5정규형(조인 종속성, 무손실 분해)
+
 - 실무실습(사용자, 권한...)
+    1. DB 관리자
+        - hr데이터베이스 생성, 관계를 설정
+        - hr DB를 사용할 사용자 계정을 생성, 필요한 권한 설정
+            - 사용자계정 : hr_user, 비밀번호 : hr_p@ss!
+            - 추가 - sa의 비번을 잃어버리면, Windows 인증으로 로그인 후
+            - SSMS > 보안 > 로그인 > sa 존재 > 속성에서 비밀번호 변경 이후 SQL Server 인증으로 sa 비밀번호 입력후 로그인 하면 됨
+            - SSMS > 보안 > 로그인 > 새 로그인 클릭
+                - 사용자계정 : hr_user, 비밀번호 : hr_p@ss!
+                - 일반 : 기본 데이터베이스 hr선택
+                - 사용자매핑 : hr 선택, 데이터베이스 역할 멤버 : db_owner 추가 선택
+    
+    2. HR사용자 로그인()
