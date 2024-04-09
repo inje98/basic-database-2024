@@ -346,7 +346,7 @@ https://github.com/inje98/basic-database-2024/assets/158007381/4fb83e03-a2fb-416
         - CASE WHEN THEN END ...
         - 내장함수...
 
-    ![HR_ERD]("https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db006.png?raw=true")
+    ![HR_ERD]("https://github.com/hugoMGSung/basic-database-2024/blob/main/images/db007.png?raw=true")
 
 - 공부를 더할 부분
     - 트랜잭션
