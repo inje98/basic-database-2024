@@ -10,4 +10,4 @@ SELECT c.custid
       ,o.saleprice
       ,o.orderdate
   FROM Customer AS c LEFT OUTER JOIN Orders AS o -- LEFT, RIGHT, FULL 등으로 변경하면서 실행
-    ON c.custid = o.custid 
+    ON c.custid = o.custid
