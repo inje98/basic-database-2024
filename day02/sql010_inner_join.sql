@@ -1,5 +1,11 @@
-﻿-- 두개 이상의 테이블 SQL 쿼리 작성
+-- 두개 이상의 테이블 SQL 쿼리 작성
 -- Customer, Orders 테이블을 동시에 조회
+SELECT *
+  FROM Customer
+
+SELECT *
+  FROM Orders
+
 SELECT *
   FROM Customer, Orders;
 
@@ -8,7 +14,11 @@ SELECT *
 SELECT *
   FROM Customer, Orders
  WHERE Customer.custid = Orders.custid
- ORDER BY Customer.address ASC; 
+ -- ORDER BY Customer.address ASC; 
+
+ SELECT *
+   FROM Customer
+ INNER JOIN Orders ON Customer.custid = Orders.custid
 
  -- 주문한 책의 고객이름과 책 판매액 조회
 SELECT Customer.[name]
@@ -18,7 +28,7 @@ SELECT Customer.[name]
 
  -- 고객별로 주문한 모든 도서의 총판매액을 구하고, 고객별로 정렬
 SELECT Customer.[name]
-	, SUM(orders.saleprice)
+	, SUM(orders.saleprice) AS '총 판매액'
   FROM Customer, Orders
  WHERE Customer.custid = Orders.custid
  GROUP BY Customer.[name]
